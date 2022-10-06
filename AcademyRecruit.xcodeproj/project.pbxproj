@@ -11,6 +11,16 @@
 		C9EACE1D28EF4B170026635E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE1C28EF4B170026635E /* ContentView.swift */; };
 		C9EACE1F28EF4B180026635E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EACE1E28EF4B180026635E /* Assets.xcassets */; };
 		C9EACE2228EF4B180026635E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EACE2128EF4B180026635E /* Preview Assets.xcassets */; };
+		C9EACE2928EF664B0026635E /* SwipeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE2828EF664B0026635E /* SwipeMenuView.swift */; };
+		C9EACE2C28EF66AD0026635E /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE2B28EF66AD0026635E /* NewsView.swift */; };
+		C9EACE2E28EF66FC0026635E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE2D28EF66FC0026635E /* WebView.swift */; };
+		C9EACE3028EF67140026635E /* GitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE2F28EF67140026635E /* GitView.swift */; };
+		C9EACE3528EF67C00026635E /* HRmaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE3228EF67C00026635E /* HRmaxView.swift */; };
+		C9EACE3628EF67C00026635E /* BmiCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE3328EF67C00026635E /* BmiCalc.swift */; };
+		C9EACE3728EF67C00026635E /* FitnessCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE3428EF67C00026635E /* FitnessCalc.swift */; };
+		C9EACE3C28EF6A2F0026635E /* CalendarViewProper .swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE3B28EF6A2F0026635E /* CalendarViewProper .swift */; };
+		C9EACE3F28EF6ACD0026635E /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE3E28EF6ACD0026635E /* TaskViewModel.swift */; };
+		C9EACE4228EF6AD70026635E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE4128EF6AD70026635E /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		C9EACE1C28EF4B170026635E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9EACE1E28EF4B180026635E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9EACE2128EF4B180026635E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9EACE2828EF664B0026635E /* SwipeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeMenuView.swift; sourceTree = "<group>"; };
+		C9EACE2B28EF66AD0026635E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		C9EACE2D28EF66FC0026635E /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		C9EACE2F28EF67140026635E /* GitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitView.swift; sourceTree = "<group>"; };
+		C9EACE3228EF67C00026635E /* HRmaxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRmaxView.swift; sourceTree = "<group>"; };
+		C9EACE3328EF67C00026635E /* BmiCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BmiCalc.swift; sourceTree = "<group>"; };
+		C9EACE3428EF67C00026635E /* FitnessCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessCalc.swift; sourceTree = "<group>"; };
+		C9EACE3B28EF6A2F0026635E /* CalendarViewProper .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarViewProper .swift"; sourceTree = "<group>"; };
+		C9EACE3E28EF6ACD0026635E /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		C9EACE4128EF6AD70026635E /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +73,7 @@
 			children = (
 				C9EACE1A28EF4B170026635E /* AcademyRecruitApp.swift */,
 				C9EACE1C28EF4B170026635E /* ContentView.swift */,
+				C9EACE2A28EF66850026635E /* Views */,
 				C9EACE1E28EF4B180026635E /* Assets.xcassets */,
 				C9EACE2028EF4B180026635E /* Preview Content */,
 			);
@@ -65,6 +86,55 @@
 				C9EACE2128EF4B180026635E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9EACE2A28EF66850026635E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9EACE3828EF69E20026635E /* Calendar */,
+				C9EACE3128EF67B50026635E /* FitnessCalc */,
+				C9EACE2828EF664B0026635E /* SwipeMenuView.swift */,
+				C9EACE2F28EF67140026635E /* GitView.swift */,
+				C9EACE2B28EF66AD0026635E /* NewsView.swift */,
+				C9EACE2D28EF66FC0026635E /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9EACE3128EF67B50026635E /* FitnessCalc */ = {
+			isa = PBXGroup;
+			children = (
+				C9EACE3328EF67C00026635E /* BmiCalc.swift */,
+				C9EACE3428EF67C00026635E /* FitnessCalc.swift */,
+				C9EACE3228EF67C00026635E /* HRmaxView.swift */,
+			);
+			path = FitnessCalc;
+			sourceTree = "<group>";
+		};
+		C9EACE3828EF69E20026635E /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				C9EACE3B28EF6A2F0026635E /* CalendarViewProper .swift */,
+				C9EACE4028EF6AD70026635E /* Model */,
+				C9EACE3D28EF6ACD0026635E /* ViewModel */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		C9EACE3D28EF6ACD0026635E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9EACE3E28EF6ACD0026635E /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C9EACE4028EF6AD70026635E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9EACE4128EF6AD70026635E /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +207,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EACE3F28EF6ACD0026635E /* TaskViewModel.swift in Sources */,
+				C9EACE3728EF67C00026635E /* FitnessCalc.swift in Sources */,
 				C9EACE1D28EF4B170026635E /* ContentView.swift in Sources */,
+				C9EACE2E28EF66FC0026635E /* WebView.swift in Sources */,
+				C9EACE3528EF67C00026635E /* HRmaxView.swift in Sources */,
+				C9EACE3628EF67C00026635E /* BmiCalc.swift in Sources */,
+				C9EACE2C28EF66AD0026635E /* NewsView.swift in Sources */,
+				C9EACE4228EF6AD70026635E /* Task.swift in Sources */,
+				C9EACE3C28EF6A2F0026635E /* CalendarViewProper .swift in Sources */,
 				C9EACE1B28EF4B170026635E /* AcademyRecruitApp.swift in Sources */,
+				C9EACE2928EF664B0026635E /* SwipeMenuView.swift in Sources */,
+				C9EACE3028EF67140026635E /* GitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

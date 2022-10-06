@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GitView.swift
 //  AcademyRecruit
 //
 //  Created by Jakub Chodara on 06/10/2022.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GitView: View {
     var body: some View {
-        Home()
+        WebView(url: URL(string: "https://github.com/ku6a-cj")!)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GitView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GitView()
     }
 }
-
