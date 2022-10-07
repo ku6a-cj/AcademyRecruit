@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9285F9628EFF82F00B47F11 /* HRmaxStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285F9528EFF82F00B47F11 /* HRmaxStruct.swift */; };
+		C9285F9828EFFA2E00B47F11 /* HRmaxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285F9728EFFA2E00B47F11 /* HRmaxViewModel.swift */; };
 		C9EACE1B28EF4B170026635E /* AcademyRecruitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE1A28EF4B170026635E /* AcademyRecruitApp.swift */; };
 		C9EACE1D28EF4B170026635E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE1C28EF4B170026635E /* ContentView.swift */; };
 		C9EACE1F28EF4B180026635E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EACE1E28EF4B180026635E /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9285F9528EFF82F00B47F11 /* HRmaxStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRmaxStruct.swift; sourceTree = "<group>"; };
+		C9285F9728EFFA2E00B47F11 /* HRmaxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRmaxViewModel.swift; sourceTree = "<group>"; };
 		C9EACE1728EF4B170026635E /* AcademyRecruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcademyRecruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EACE1A28EF4B170026635E /* AcademyRecruitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyRecruitApp.swift; sourceTree = "<group>"; };
 		C9EACE1C28EF4B170026635E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 				C9EACE3328EF67C00026635E /* BmiCalc.swift */,
 				C9EACE3428EF67C00026635E /* FitnessCalc.swift */,
 				C9EACE3228EF67C00026635E /* HRmaxView.swift */,
+				C9285F9728EFFA2E00B47F11 /* HRmaxViewModel.swift */,
+				C9285F9528EFF82F00B47F11 /* HRmaxStruct.swift */,
 			);
 			path = FitnessCalc;
 			sourceTree = "<group>";
@@ -212,10 +218,12 @@
 				C9EACE1D28EF4B170026635E /* ContentView.swift in Sources */,
 				C9EACE2E28EF66FC0026635E /* WebView.swift in Sources */,
 				C9EACE3528EF67C00026635E /* HRmaxView.swift in Sources */,
+				C9285F9828EFFA2E00B47F11 /* HRmaxViewModel.swift in Sources */,
 				C9EACE3628EF67C00026635E /* BmiCalc.swift in Sources */,
 				C9EACE2C28EF66AD0026635E /* NewsView.swift in Sources */,
 				C9EACE4228EF6AD70026635E /* Task.swift in Sources */,
 				C9EACE3C28EF6A2F0026635E /* CalendarViewProper .swift in Sources */,
+				C9285F9628EFF82F00B47F11 /* HRmaxStruct.swift in Sources */,
 				C9EACE1B28EF4B170026635E /* AcademyRecruitApp.swift in Sources */,
 				C9EACE2928EF664B0026635E /* SwipeMenuView.swift in Sources */,
 				C9EACE3028EF67140026635E /* GitView.swift in Sources */,

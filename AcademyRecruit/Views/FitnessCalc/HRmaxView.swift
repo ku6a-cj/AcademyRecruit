@@ -16,6 +16,9 @@ struct HRmaxView: View {
     @State var ResoultString = "Press to see resoult"
     @State var interpretation = " "
     @State var HRMAX = 0.0
+    @State var visable = false
+    @StateObject private var vm = HRmaxViewModel()
+    @State var counter = 0
     
     var body: some View {
         
@@ -79,33 +82,66 @@ struct HRmaxView: View {
                 Section(header: Text("Resoult")){
                     VStack(alignment: .center) {
                         Spacer()
-                        HStack {
+                        HStack{
                             Text("\(ResoultString)")
-                                .multilineTextAlignment(.center)
                             .padding(.top, 7.0)
+                            
                         }
-                        Spacer()
-                        Text("\(interpretation)")
-                            .multilineTextAlignment(TextAlignment.center)
-                            .padding(.bottom, 7.0)
+                        .padding(.leading, 70.0)
                         Spacer()
                     }
+                    
+                    List(vm.HRmaxList){ hrmax in
+                        VStack(alignment: .leading){
+                            HStack {
+                                Text("Gender:")
+                                Text(hrmax.gender)
+                            }
+                            HStack {
+                                Text("Age:")
+                                Text(String(hrmax.age))
+                            }
+                            HStack {
+                                Text("Weight:")
+                                Text(String(hrmax.weight))
+                            }
+                            HStack {
+                                Text("HRmax:")
+                                Text(String(hrmax.HRmaX))
+                            }
+                        }
+                 
+                        
+                    }
+                    
                     
                 }.onTapGesture {
-                    if(GenderChoice == "male"){
-                        HRMAX = 210 - 0.5*Double(age)-0.022*Double(Weight)+4
-                    }else{
-                        HRMAX = 210-0.5*Double(age)-0.022*Double(Weight)
+                    if(counter>0){
+                        vm.deleteItem()
                     }
+                    vm.weight = Weight
+                    vm.age = age
+                    vm.Gender = GenderChoice
+                    vm.addItem()
+                    counter += 1
                     
-                    ResoultString = "Your hr max = " + String(HRMAX)
+                    
+//                    if(GenderChoice == "male"){
+//                        HRMAX = 210 - 0.5*Double(age)-0.022*Double(Weight)+4
+//                    }else{
+//                        HRMAX = 210-0.5*Double(age)-0.022*Double(Weight)
+//                    }
+//
+//                    ResoultString = "Your hr max = " + String(HRMAX)
 
                     
                 }
             }
         }
         
+        
     }
+    
 }
 
 
