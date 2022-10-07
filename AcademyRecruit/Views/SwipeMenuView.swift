@@ -247,7 +247,7 @@ struct Home : View{
                 GeometryReader{ _ in
                     VStack{
                         if self.index == 0{
-                            MainPage()
+                            MainPageView()
                         }else if self.index == 1{
                             RankingPoints()
                         }else if self.index == 2{
@@ -283,52 +283,4 @@ struct Home : View{
     }
 }
 
-
-//MainPageView
-
-struct MainPage: View{
-    var body: some View{
-        
-        
-        ZStack(alignment: .bottomTrailing){
-            VStack(spacing: 12){
-                
-                Text("MainScreen")
-                
-            }
-            .padding()
-            .background(Color.black.opacity(0.06))
-            .cornerRadius(15)
-            .padding()
-            
-            
-        }
-    }
-}
-
-struct Card: View{
-    var body: some View{
-        VStack{
-            Text("Page1")
-        }
-    }
-}
-
-
-struct Others: View{
-    var body: some View{
-        VStack{
-            Text("Page3")
-        }
-    }
-}
-
-
-struct Some: View{
-    var body: some View{
-        VStack{
-            Text("Page3")
-        }
-    }
-}
 

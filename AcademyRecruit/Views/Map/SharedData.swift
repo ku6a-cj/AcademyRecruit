@@ -9,8 +9,8 @@ import Foundation
 final class Shared {
      static let shared = Shared() //lazy init, and it only runs once
 
-    var Lat = 54.3
-    var Long = 21.3
+    var Lat : Double!
+    var Long : Double!
     var MyPoints : Double!
     
 }

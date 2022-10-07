@@ -15,7 +15,7 @@ struct Map: View {
     @State public var directions: [String] = []
     @State private var showDirections = false
     @State  var long = 21.32
-    @State  var lat = 53.22
+    @State  var lat = 54.44
     @State private var OK = true
 
     
@@ -98,17 +98,19 @@ struct MapView: UIViewRepresentable {
         let address1 = [CNPostalAddressStreetKey: "Your location", CNPostalAddressCityKey: "", CNPostalAddressPostalCodeKey: "", CNPostalAddressISOCountryCodeKey: "PL"]
 
         let p1 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 52.253188, longitude: 20.900672), addressDictionary: address)
-        if(Shared.shared.Lat == 0 || Shared.shared.Long == 0 ){
+        if(Shared.shared.Lat == nil || Shared.shared.Long == nil ){
             lat = 21.0
             long = 22.3
         }else{
-            lat = Double(Shared.shared.Lat)
-            long = Double (Shared.shared.Long)
+           // lat = Double(Shared.shared.Lat)
+           // long = Double (Shared.shared.Long)
+            print("Data:" + String(Shared.shared.Lat))
+            print("Data:" + String(Shared.shared.Long))
             //if you wonna change ur location change what is stored in Shared.shared. ...
         }
         
 
-        let p2 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: lat, longitude: long),addressDictionary: address1)
+        let p2 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: Shared.shared.Lat, longitude: Shared.shared.Long),addressDictionary: address1)
         
         let request = MKDirections.Request()
         request.source=MKMapItem(placemark: p2)

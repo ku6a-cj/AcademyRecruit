@@ -18,6 +18,11 @@
 		C9285FB428F0274100B47F11 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FB128F0274100B47F11 /* Persistance.swift */; };
 		C9285FB528F0274100B47F11 /* DataBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FB228F0274100B47F11 /* DataBaseView.swift */; };
 		C9285FB728F0275300B47F11 /* RankingPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FB628F0275300B47F11 /* RankingPoints.swift */; };
+		C9285FB928F02A3200B47F11 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FB828F02A3200B47F11 /* MainPageView.swift */; };
+		C9285FBE28F02C7300B47F11 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FBB28F02C7300B47F11 /* Localization.swift */; };
+		C9285FBF28F02C7300B47F11 /* SimulatioScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FBC28F02C7300B47F11 /* SimulatioScoreView.swift */; };
+		C9285FC028F02C7300B47F11 /* DaysTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FBD28F02C7300B47F11 /* DaysTo.swift */; };
+		C9285FC228F02E1A00B47F11 /* DeviceLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FC128F02E1A00B47F11 /* DeviceLocationService.swift */; };
 		C9EACE1B28EF4B170026635E /* AcademyRecruitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE1A28EF4B170026635E /* AcademyRecruitApp.swift */; };
 		C9EACE1D28EF4B170026635E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EACE1C28EF4B170026635E /* ContentView.swift */; };
 		C9EACE1F28EF4B180026635E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EACE1E28EF4B180026635E /* Assets.xcassets */; };
@@ -46,6 +51,11 @@
 		C9285FB128F0274100B47F11 /* Persistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		C9285FB228F0274100B47F11 /* DataBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseView.swift; sourceTree = "<group>"; };
 		C9285FB628F0275300B47F11 /* RankingPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RankingPoints.swift; path = ../../../ForestSurvive/ForestSurvive/RankingPoints.swift; sourceTree = "<group>"; };
+		C9285FB828F02A3200B47F11 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		C9285FBB28F02C7300B47F11 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		C9285FBC28F02C7300B47F11 /* SimulatioScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatioScoreView.swift; sourceTree = "<group>"; };
+		C9285FBD28F02C7300B47F11 /* DaysTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTo.swift; sourceTree = "<group>"; };
+		C9285FC128F02E1A00B47F11 /* DeviceLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceLocationService.swift; sourceTree = "<group>"; };
 		C9EACE1728EF4B170026635E /* AcademyRecruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcademyRecruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EACE1A28EF4B170026635E /* AcademyRecruitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyRecruitApp.swift; sourceTree = "<group>"; };
 		C9EACE1C28EF4B170026635E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +87,7 @@
 		C9285F9F28F01BC700B47F11 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				C9285FC128F02E1A00B47F11 /* DeviceLocationService.swift */,
 				C9285F9D28F01B9500B47F11 /* SharedData.swift */,
 				C9285FA128F01BE700B47F11 /* Map.swift */,
 				C9285FA028F01BE700B47F11 /* MapView.swift */,
@@ -93,6 +104,16 @@
 			);
 			name = DataBase;
 			path = FitnessCalc/DataBase;
+			sourceTree = "<group>";
+		};
+		C9285FBA28F02C7300B47F11 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				C9285FBB28F02C7300B47F11 /* Localization.swift */,
+				C9285FBC28F02C7300B47F11 /* SimulatioScoreView.swift */,
+				C9285FBD28F02C7300B47F11 /* DaysTo.swift */,
+			);
+			path = Bar;
 			sourceTree = "<group>";
 		};
 		C9EACE0E28EF4B170026635E = {
@@ -134,11 +155,13 @@
 		C9EACE2A28EF66850026635E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C9285FBA28F02C7300B47F11 /* Bar */,
 				C9285F9F28F01BC700B47F11 /* Map */,
 				C9EACE3828EF69E20026635E /* Calendar */,
 				C9285FAE28F0274100B47F11 /* DataBase */,
 				C9EACE3128EF67B50026635E /* FitnessCalc */,
 				C9EACE2828EF664B0026635E /* SwipeMenuView.swift */,
+				C9285FB828F02A3200B47F11 /* MainPageView.swift */,
 				C9285FB628F0275300B47F11 /* RankingPoints.swift */,
 				C9EACE2F28EF67140026635E /* GitView.swift */,
 				C9EACE2B28EF66AD0026635E /* NewsView.swift */,
@@ -259,15 +282,19 @@
 			files = (
 				C9EACE3F28EF6ACD0026635E /* TaskViewModel.swift in Sources */,
 				C9285F9C28F00F2800B47F11 /* BmiViewModel.swift in Sources */,
+				C9285FB928F02A3200B47F11 /* MainPageView.swift in Sources */,
 				C9285FB728F0275300B47F11 /* RankingPoints.swift in Sources */,
+				C9285FC228F02E1A00B47F11 /* DeviceLocationService.swift in Sources */,
 				C9EACE3728EF67C00026635E /* FitnessCalc.swift in Sources */,
 				C9EACE1D28EF4B170026635E /* ContentView.swift in Sources */,
+				C9285FBE28F02C7300B47F11 /* Localization.swift in Sources */,
 				C9EACE2E28EF66FC0026635E /* WebView.swift in Sources */,
 				C9EACE3528EF67C00026635E /* HRmaxView.swift in Sources */,
 				C9285F9828EFFA2E00B47F11 /* HRmaxViewModel.swift in Sources */,
 				C9285FA228F01BE700B47F11 /* MapView.swift in Sources */,
 				C9EACE3628EF67C00026635E /* BmiCalc.swift in Sources */,
 				C9285FA328F01BE700B47F11 /* Map.swift in Sources */,
+				C9285FBF28F02C7300B47F11 /* SimulatioScoreView.swift in Sources */,
 				C9EACE2C28EF66AD0026635E /* NewsView.swift in Sources */,
 				C9EACE4228EF6AD70026635E /* Task.swift in Sources */,
 				C9285F9E28F01B9500B47F11 /* SharedData.swift in Sources */,
@@ -277,6 +304,7 @@
 				C9285F9628EFF82F00B47F11 /* HRmaxStruct.swift in Sources */,
 				C9285F9A28F00E9900B47F11 /* BmiStruct.swift in Sources */,
 				C9EACE1B28EF4B170026635E /* AcademyRecruitApp.swift in Sources */,
+				C9285FC028F02C7300B47F11 /* DaysTo.swift in Sources */,
 				C9EACE2928EF664B0026635E /* SwipeMenuView.swift in Sources */,
 				C9EACE3028EF67140026635E /* GitView.swift in Sources */,
 				C9285FB528F0274100B47F11 /* DataBaseView.swift in Sources */,
@@ -411,6 +439,7 @@
 				DEVELOPMENT_TEAM = WYYD435V93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Let app see your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,6 +469,7 @@
 				DEVELOPMENT_TEAM = WYYD435V93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Let app see your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
