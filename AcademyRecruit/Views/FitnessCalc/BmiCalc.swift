@@ -14,6 +14,8 @@ struct BmiCalc: View {
     @State var BMI = 0.0
     @State var ResoultString = "Press to see resoult"
     @State var interpretation = ""
+    @StateObject private var BVM = BMi()
+    @State var counter = 0
     
     
     func testNumberAsString(_ numberAsString: String) -> NSDecimalNumber{
@@ -84,24 +86,48 @@ struct BmiCalc: View {
                 }
                 
                 Section(header: Text("Resoult")){
+                    
                     VStack(alignment: .center) {
                         Spacer()
-                        HStack {
-                            Text("\(ResoultString)")
-                                .multilineTextAlignment(.center)
+                        HStack{
+                            Text("Press to see resoult")
                             .padding(.top, 7.0)
+                            
                         }
+                        .padding(.leading, 70.0)
                         Spacer()
-                        Text("\(interpretation)")
-                            .multilineTextAlignment(TextAlignment.center)
-                            .padding(.bottom, 7.0)
-                        Spacer()
+                    }
+
+                    
+                    List(BVM.BmiList){ Bmi in
+                        VStack(alignment: .leading){
+                            HStack {
+                                Text("Weight:")
+                                Text(String(Bmi.weight))
+                            }
+                            HStack {
+                                Text("Height:")
+                                Text(String(Bmi.height))
+                            }
+                            HStack {
+                                Text("Bmi:")
+                                Text(String(Bmi.BmI))
+                            }
+                            HStack {
+                                    Text("Interpretation:")
+                                    Text(String(Bmi.Interpretation))
+                            }
+                        }
                     }
                     
                 }.onTapGesture {
-                    BMI = (Double(Weight)/Double(pow(Double(Height),Double(2))))*10000
-                    ResoultString = "Your BMI = " + String("\(testNumberAsString("\(String(BMI))"))")
-                    interpretatorBMI(BMI: BMI)
+                    if(counter>0){
+                        BVM.deleteItem()
+                    }
+                    BVM.weight = Weight
+                    BVM.heigh = Height
+                    BVM.addItem()
+                    counter += 1
                 }
             }
         }
