@@ -57,7 +57,7 @@ struct Home : View{
                     }){
                         HStack(spacing: 10){
                             
-                            Image(systemName: "person.crop.circle")
+                            Image(systemName: "house.fill")
                                 .foregroundColor(self.index == 0 ? Color.white : Color.white)
                             
                             Text("Home")
@@ -80,7 +80,7 @@ struct Home : View{
                     }){
                         HStack(spacing: 10){
                             
-                            Image(systemName: "person.crop.circle")
+                            Image(systemName: "chart.bar.xaxis")
                                 .foregroundColor(self.index == 1 ? Color.white : Color.white)
                             
                             Text("Ranking Points")
@@ -103,7 +103,7 @@ struct Home : View{
                     }){
                         HStack(spacing: 10){
                             
-                            Image(systemName: "person.crop.circle")
+                            Image(systemName: "globe.europe.africa")
                                 .foregroundColor(self.index == 2 ? Color.white : Color.white)
                             
                             Text("Set route to WAT")
@@ -126,7 +126,7 @@ struct Home : View{
                     }){
                         HStack(spacing: 10){
                             
-                            Image(systemName: "person.crop.circle")
+                            Image(systemName: "figure.climbing")
                                 .foregroundColor(self.index == 3 ? Color.white : Color.white)
                             
                             Text("Fitness Calculators")
@@ -148,7 +148,7 @@ struct Home : View{
                     }){
                         HStack(spacing: 10){
                             
-                            Image(systemName: "person.crop.circle")
+                            Image(systemName: "calendar")
                                 .foregroundColor(self.index == 4 ? Color.white : Color.white)
                             
                             Text("Calendar")
@@ -170,7 +170,7 @@ struct Home : View{
                     }){
                         HStack(spacing: 10){
                             
-                            Image(systemName: "person.crop.circle")
+                            Image(systemName: "newspaper")
                                 .foregroundColor(self.index == 5 ? Color.white : Color.white)
                             
                             Text("News")
@@ -195,7 +195,7 @@ struct Home : View{
                     }){
                         HStack(spacing: 10){
                             
-                            Image(systemName: "person.crop.circle")
+                            Image(systemName: "shareplay")
                                 .foregroundColor(self.index == 6 ? Color.white : Color.white)
                             
                             Text("Git")
