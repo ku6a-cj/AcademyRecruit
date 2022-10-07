@@ -20,6 +20,14 @@ struct HRmaxView: View {
     @StateObject private var vm = HRmaxViewModel()
     @State var counter = 0
     
+    func testNumberAsString(_ numberAsString: String) -> NSDecimalNumber{
+        let num = NSDecimalNumber.init(string: numberAsString)
+        let behaviour = NSDecimalNumberHandler(roundingMode:.down, scale: 2, raiseOnExactness: false,  raiseOnOverflow: false, raiseOnUnderflow: false, raiseOnDivideByZero: false)
+        let numRounded = num.rounding(accordingToBehavior: behaviour)
+
+        return numRounded
+    }
+    
     var body: some View {
         
         
@@ -107,7 +115,9 @@ struct HRmaxView: View {
                             }
                             HStack {
                                 Text("HRmax:")
-                                Text(String(hrmax.HRmaX))
+                                //Text(String(hrmax.HRmaX))
+                                let pom = testNumberAsString(String(hrmax.HRmaX))
+                                Text(String("\(pom)")) 
                             }
                         }
                  
