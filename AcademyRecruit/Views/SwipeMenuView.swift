@@ -249,9 +249,9 @@ struct Home : View{
                         if self.index == 0{
                             MainPage()
                         }else if self.index == 1{
-                            Card()
+                            RankingPoints()
                         }else if self.index == 2{
-                            Others()
+                            Map()
                         }else if self.index == 3{
                             FitnessCalc()
                         }else if self.index == 4{
