@@ -217,15 +217,15 @@ struct Home : View{
                         HStack(spacing: 10){
                             
                             Image(systemName: "figure.cooldown")
-                                .foregroundColor(self.index == 6 ? Color.white : Color.white)
+                                .foregroundColor(self.index == 7 ? Color.white : Color.white)
                             
                             Text("Training")
-                                .foregroundColor(self.index == 6 ? Color.white : Color.white)
+                                .foregroundColor(self.index == 7 ? Color.white : Color.white)
                              
                         }
                         .padding(.vertical,10)
                         .padding(.horizontal)
-                        .background(self.index == 6 ? Color.white.opacity(0.2) : Color.clear)
+                        .background(self.index == 7 ? Color.white.opacity(0.2) : Color.clear)
                         .cornerRadius(10)
                     }
                     

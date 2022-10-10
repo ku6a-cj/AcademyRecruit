@@ -153,6 +153,10 @@ struct TrainingView: View {
                         }
                     }
                 }
+                Section(header: Text("End Training")){
+                  Text("To save training navigate to Home page")
+                }
+                
             }
         }
     }
