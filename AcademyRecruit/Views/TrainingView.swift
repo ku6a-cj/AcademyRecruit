@@ -17,7 +17,10 @@ struct TrainingView: View {
     @State var excesise3 =  [false, false, false, false, false, false, false]
     @State var excesise4 =  [false, false, false, false, false, false, false]
 
+    @Environment(\.managedObjectContext) private var viewContext
     
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Task.date, ascending: false)])
+    private var tasks: FetchedResults<Task>
     
     var body: some View {
         VStack{
@@ -26,6 +29,8 @@ struct TrainingView: View {
                     TrainingSelected = 1
                     trainings = ExcesiseViewModel().StoredExcesise1
                     TrainingPattern = "You selected: " + String(TrainingSelected)
+                    Shared.shared.SelectedLvl = TrainingSelected
+                    print("Selected1")
                 }, label: {
                     Text("1")
                 })
@@ -33,6 +38,7 @@ struct TrainingView: View {
                     TrainingSelected = 2
                     trainings = ExcesiseViewModel().StoredExcesise2
                     TrainingPattern = "You selected: " + String(TrainingSelected)
+                    Shared.shared.SelectedLvl = TrainingSelected
                 }, label: {
                     Text("2")
                 })
@@ -40,6 +46,7 @@ struct TrainingView: View {
                     TrainingSelected = 3
                     trainings = ExcesiseViewModel().StoredExcesise3
                     TrainingPattern = "You selected: " + String(TrainingSelected)
+                    Shared.shared.SelectedLvl = TrainingSelected
                 }, label: {
                     Text("3")
                 })
@@ -47,6 +54,7 @@ struct TrainingView: View {
                     TrainingSelected = 4
                     trainings = ExcesiseViewModel().StoredExcesise4
                     TrainingPattern = "You selected: " + String(TrainingSelected)
+                    Shared.shared.SelectedLvl = TrainingSelected
                 }, label: {
                     Text("4")
                 })
@@ -54,6 +62,7 @@ struct TrainingView: View {
                     TrainingSelected = 5
                     trainings = ExcesiseViewModel().StoredExcesise5
                     TrainingPattern = "You selected: " + String(TrainingSelected)
+                    Shared.shared.SelectedLvl = TrainingSelected
                 }, label: {
                     Text("5")
                 })
@@ -61,6 +70,7 @@ struct TrainingView: View {
                     TrainingSelected = 6
                     trainings = ExcesiseViewModel().StoredExcesise6
                     TrainingPattern = "You selected: " + String(TrainingSelected)
+                    Shared.shared.SelectedLvl = TrainingSelected
                 }, label: {
                     Text("6")
                 })
@@ -68,6 +78,7 @@ struct TrainingView: View {
                     TrainingSelected = 7
                     trainings = ExcesiseViewModel().StoredExcesise7
                     TrainingPattern = "You selected: " + String(TrainingSelected)
+                    Shared.shared.SelectedLvl = TrainingSelected
                 }, label: {
                     Text("7")
                 })

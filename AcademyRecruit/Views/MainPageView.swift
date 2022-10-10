@@ -20,7 +20,7 @@ struct MainPageView: View {
     @StateObject var deviceLocationService = DeviceLocationService.shared
     @State var coordinates: (lat: Double, lon: Double) = (0, 0)
 
-    
+    @State var newestData = 1
     @State  var long = 20.0
     @State  var lat = 52.0
     @State var tokens: Set<AnyCancellable> = []
@@ -31,13 +31,16 @@ struct MainPageView: View {
                 ScrollView(.horizontal){
                     LazyHStack(alignment: .center, spacing: -70){
                         SimulatioScoreView()
-                            .padding(.leading, -40.0)
+                            .shadow(radius: 10)
+                            .padding(.leading, -45.0)
+                        lastTrainingView()
+                        .padding(.leading, 20.0)
                         .shadow(radius: 10)
                         DaysTo()
+                        .padding(.leading, 45.0)
                         .shadow(radius: 10)
-                            .padding(.leading, 20.0)
                         Localization()
-                            .padding(.leading, 70.0)
+                        .padding(.leading, 55.0)
                          .shadow(radius: 10)
                         
                     }}.frame(height:130)
@@ -101,11 +104,24 @@ struct MainPageView: View {
                     ForEach(tasks) { task in
                         VStack(spacing: -60) {
                             DataBaseView( Points: task.title ?? "NN", DataM: task.date?.formatted(date: .numeric, time: .shortened) ?? "UNN DATE", GenderChoice: task.gender ?? "UNNOWN")
+                                .onAppear {
+                                          if(newestData == 2){
+                                              let points = (task.title! as NSString).doubleValue
+                                              Shared.shared.MyPoints = points
+                                              print("Shared.shared.MyPoints=\(Shared.shared.MyPoints!)")
+                                              print("Points=\(points)")
+                                              
+                                              if Shared.shared.SelectedLvl == nil{
+                                                  Shared.shared.SelectedLvl = Int(task.trainingLvl)
+                                              }
+
+                                            updateTask(task)
+                                        }
+                                    newestData += 1
+                                    
+                                }
                             // on tap does not work becouse it is already used in a DataBaseView to change colour while selecting
-    //                                    .onTapGesture {
-    //                                       // sel.toggle()
-    //                                        updateTask(task)}
-                            
+
                            // Text(task.title ?? "Untitled")
                            // Text(task.date?.formatted(date: .numeric, time: .shortened) ?? "UNN DATE" )
                     }
@@ -215,9 +231,14 @@ struct MainPageView: View {
 
     
     private func updateTask(_ task: FetchedResults<Task>.Element){
+       // print("im in update func")
         withAnimation{
-            task.title = "My Score: \(String(Shared.shared.MyPoints ?? 0)) \(Date().formatted(date: .numeric, time: .shortened))"
-            saveContext()
+            if(Shared.shared.SelectedLvl != nil){
+                let pom = Int64(Shared.shared.SelectedLvl)
+                task.trainingLvl = pom
+                print("updated\(String(task.trainingLvl))")
+                saveContext()
+            }
         }
     }
     

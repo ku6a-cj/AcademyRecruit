@@ -12,5 +12,6 @@ final class Shared {
     var Lat : Double!
     var Long : Double!
     var MyPoints : Double!
+    var SelectedLvl: Int!
     
 }

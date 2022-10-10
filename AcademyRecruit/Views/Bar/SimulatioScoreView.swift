@@ -16,7 +16,7 @@ struct SimulatioScoreView: View {
         HStack{
             VStack{
                 Button {
-                    MyPoints1 = Shared.shared.MyPoints
+                        MyPoints1 = Shared.shared.MyPoints
                 } label: {
                     VStack {
                         Text("My points: ")
@@ -26,6 +26,11 @@ struct SimulatioScoreView: View {
                         Text(String(MyPoints1 ?? 0))
                             .font(.title)
                             .foregroundColor(isSelected ? .white : .black)
+                            .onAppear{
+                                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                                    MyPoints1 = Shared.shared.MyPoints
+                            })
+                            }
                     }      
                 }
             }

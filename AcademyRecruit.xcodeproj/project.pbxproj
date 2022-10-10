@@ -23,6 +23,7 @@
 		C9285FBF28F02C7300B47F11 /* SimulatioScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FBC28F02C7300B47F11 /* SimulatioScoreView.swift */; };
 		C9285FC028F02C7300B47F11 /* DaysTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FBD28F02C7300B47F11 /* DaysTo.swift */; };
 		C9285FC228F02E1A00B47F11 /* DeviceLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9285FC128F02E1A00B47F11 /* DeviceLocationService.swift */; };
+		C943A44D28F49608005EF12A /* lastTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943A44C28F49608005EF12A /* lastTrainingView.swift */; };
 		C9CD014028F410FB00574B3F /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD013F28F410FB00574B3F /* TrainingView.swift */; };
 		C9CD014228F412CC00574B3F /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD014128F412CC00574B3F /* TrainingModel.swift */; };
 		C9CD014428F4132C00574B3F /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD014328F4132C00574B3F /* TrainingViewModel.swift */; };
@@ -59,6 +60,7 @@
 		C9285FBC28F02C7300B47F11 /* SimulatioScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatioScoreView.swift; sourceTree = "<group>"; };
 		C9285FBD28F02C7300B47F11 /* DaysTo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTo.swift; sourceTree = "<group>"; };
 		C9285FC128F02E1A00B47F11 /* DeviceLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceLocationService.swift; sourceTree = "<group>"; };
+		C943A44C28F49608005EF12A /* lastTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lastTrainingView.swift; sourceTree = "<group>"; };
 		C9CD013F28F410FB00574B3F /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
 		C9CD014128F412CC00574B3F /* TrainingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
 		C9CD014328F4132C00574B3F /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				C9285FBB28F02C7300B47F11 /* Localization.swift */,
 				C9285FBC28F02C7300B47F11 /* SimulatioScoreView.swift */,
 				C9285FBD28F02C7300B47F11 /* DaysTo.swift */,
+				C943A44C28F49608005EF12A /* lastTrainingView.swift */,
 			);
 			path = Bar;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				C9285F9A28F00E9900B47F11 /* BmiStruct.swift in Sources */,
 				C9EACE1B28EF4B170026635E /* AcademyRecruitApp.swift in Sources */,
 				C9285FC028F02C7300B47F11 /* DaysTo.swift in Sources */,
+				C943A44D28F49608005EF12A /* lastTrainingView.swift in Sources */,
 				C9EACE2928EF664B0026635E /* SwipeMenuView.swift in Sources */,
 				C9EACE3028EF67140026635E /* GitView.swift in Sources */,
 				C9285FB528F0274100B47F11 /* DataBaseView.swift in Sources */,
