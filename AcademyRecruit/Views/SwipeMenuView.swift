@@ -207,7 +207,27 @@ struct Home : View{
                         .background(self.index == 6 ? Color.white.opacity(0.2) : Color.clear)
                         .cornerRadius(10)
                     }
-                    
+                    Button(action: {
+                        self.index = 7
+                        //animatingViews
+                        withAnimation{
+                            self.show.toggle()
+                        }
+                    }){
+                        HStack(spacing: 10){
+                            
+                            Image(systemName: "shareplay")
+                                .foregroundColor(self.index == 6 ? Color.white : Color.white)
+                            
+                            Text("Training")
+                                .foregroundColor(self.index == 6 ? Color.white : Color.white)
+                             
+                        }
+                        .padding(.vertical,10)
+                        .padding(.horizontal)
+                        .background(self.index == 6 ? Color.white.opacity(0.2) : Color.clear)
+                        .cornerRadius(10)
+                    }
                     
 
                 }
@@ -234,7 +254,7 @@ struct Home : View{
                             .foregroundColor(Color.black.opacity(0.4))
 
                     }
-                    Text(self.index == 0 ? "Home" : (self.index == 1 ? "Ranking Points Calculator" : (self.index == 2 ? "Set Route to WAT" : (self.index == 3 ? "Fitness Calculators" :  (self.index == 4 ? "Calendar" : (self.index == 5 ? "News" : "Git") )) )))
+                    Text(self.index == 0 ? "Home" : (self.index == 1 ? "Ranking Points Calculator" : (self.index == 2 ? "Set Route to WAT" : (self.index == 3 ? "Fitness Calculators" :  (self.index == 4 ? "Calendar" : (self.index == 5 ? "News" : (self.index == 6 ? "Git" : "Training")) )) )))
                         .font(.title)
                         .foregroundColor(Color.black.opacity(0.6))
                     Spacer(minLength: 0)
@@ -260,6 +280,8 @@ struct Home : View{
                             NewsView()
                         }else if self.index == 6{
                             GitView()
+                        }else if self.index == 7{
+                            TrainingView()
                         }
                     }
 
