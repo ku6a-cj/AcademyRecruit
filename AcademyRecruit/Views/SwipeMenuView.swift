@@ -216,7 +216,7 @@ struct Home : View{
                     }){
                         HStack(spacing: 10){
                             
-                            Image(systemName: "shareplay")
+                            Image(systemName: "figure.cooldown")
                                 .foregroundColor(self.index == 6 ? Color.white : Color.white)
                             
                             Text("Training")

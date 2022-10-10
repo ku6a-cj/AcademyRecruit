@@ -12,10 +12,10 @@ struct TrainingView: View {
     @State var TrainingSelected = 1
     @State var isPrivate: Bool = true
     @State var trainings = ExcesiseViewModel().StoredExcesise1
-    @State var excesise1 =  [false, false, false, false, false, false]
-    @State var excesise2 =  [false, false, false, false, false, false]
-    @State var excesise3 =  [false, false, false, false, false, false]
-    @State var excesise4 =  [false, false, false, false, false, false]
+    @State var excesise1 =  [false, false, false, false, false, false, false]
+    @State var excesise2 =  [false, false, false, false, false, false, false]
+    @State var excesise3 =  [false, false, false, false, false, false, false]
+    @State var excesise4 =  [false, false, false, false, false, false, false]
 
     
     
